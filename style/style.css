@@ -1,0 +1,263 @@
+@import url("./fonts/Inter/stylesheet.css");
+@import url("./fonts/UTM-Bebas/stylesheet.css");
+@import url("../js/daterange/daterangepicker.css");
+:root {
+  --primaryColor: rgb(46, 144, 250);
+  --borderColor: #e5e7eb;
+  --backgroundBlueLight: rgb(244, 248, 253);
+  --backgroundPinkLight: rgb(255, 233, 227);
+  --backgroundBlueMd: rgba(46, 144, 250, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+select,
+input,
+textarea {
+  font-family: "Inter", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  vertical-align: middle;
+  background: unset;
+}
+
+body {
+  font-family: "Inter", "sans-serif";
+  line-height: 1.5;
+  overflow: hidden auto;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.fz-big {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.fz-md {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.fz-nor {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-number {
+  font-family: "UTM Bebas", sans-serif;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.campain-kha-card {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.campain-kha img {
+  width: 100%;
+  vertical-align: middle;
+}
+.campain-kha-header {
+  background-color: #fff;
+  padding: 16px;
+  border-bottom: 1px solid rgb(252, 252, 253);
+  box-shadow: rgba(145, 158, 171, 0.16) 0px 2px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.campain-kha-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.campain-kha-date .date-search {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--primaryColor);
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.campain-kha-container {
+  padding: 24px;
+}
+
+.datepicker-range {
+  min-width: 194px;
+  min-height: 42px;
+  padding: 8px;
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.sec-campain:not(:last-child) {
+  margin-bottom: 24px;
+}
+.sec-campain-box {
+  background-color: var(--backgroundBlueLight);
+}
+.sec-campain-content {
+  padding-top: 16px;
+}
+
+.web-statistics-list {
+  display: flex;
+  gap: 16px;
+}
+.web-statistics-list .item {
+  width: 33.3333333333%;
+}
+.web-statistics-list .wrap {
+  height: 100%;
+  background-color: #fff;
+}
+.web-statistics-list .num {
+  font-size: 32px;
+}
+.web-statistics-list .note {
+  font-size: 14px;
+}
+
+.sec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sec-table th {
+  background-color: var(--backgroundBlueMd);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sec-table th:first-child {
+  border-top-left-radius: 12px;
+}
+.sec-table th:last-child {
+  border-top-right-radius: 12px;
+}
+.sec-table th,
+.sec-table td {
+  border-collapse: collapse;
+}
+.sec-table th,
+.sec-table td {
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.sec-table tr:nth-child(even) td {
+  background-color: #fff;
+}
+.sec-table .img-info {
+  margin-top: -2px;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.campain-kha-card.bg-white .sec-table tr:nth-child(even) td {
+  background-color: var(--backgroundBlueLight);
+}
+
+.sec-table-tt {
+  margin-bottom: 8px;
+}
+
+#tooltip {
+  background: #333;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: none;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}
+
+/*# sourceMappingURL=style.css.map */

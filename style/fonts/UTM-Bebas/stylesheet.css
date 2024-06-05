@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'UTM Bebas';
+    src: url('UTMBebas.eot');
+    src: url('UTMBebas.eot?#iefix') format('embedded-opentype'),
+        url('UTMBebas.woff2') format('woff2'),
+        url('UTMBebas.woff') format('woff'),
+        url('UTMBebas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

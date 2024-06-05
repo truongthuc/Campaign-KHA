@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script src="./js/daterange/jquery.min.js"></script>
+    <script src="./js/daterange/moment.min.js"></script>
+    <script src="./js/daterange/vi.js"></script>
+    <script src="./js/daterange/daterangepicker.min.js"></script>
+    <script src="./js/popper/popper.min.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="campain-kha">
+        <div class="campain-kha-header sticky top-0">
+          <div class="campain-kha-tt fz-big">Campaign KHA-H</div>
+          <div class="campain-kha-date">
+            <div class="date-choose">
+              <input
+                type="text"
+                name="daterange"
+                class="datepicker-range open-datepicker-js"
+                value=""
+              />
+              <!-- <div class="datepicker-range">
+              <div class="date date-from-js">04/04/2024 </div>
+              <div class="sperator"> - </div>
+              <div class="date date-to-js"> 05/06/2024</div>
+            </div> -->
+            </div>
+            <button class="date-search">
+              <img src="./images/icon-search.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="campain-kha-container">
+          <section class="sec-campain sec-web-statistics">
+            <div class="sec-campain-box campain-kha-card">
+              <div class="sec-campain-tt fz-md">Doanh số</div>
+
+              <div class="sec-campain-content">
+                <div class="web-statistics-list">
+                  <div class="item">
+                    <div class="wrap campain-kha-card">
+                      <div class="label">Tổng doanh thu</div>
+                      <div class="num font-number">1,192,500,000</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="wrap campain-kha-card">
+                      <div class="label">Tổng Đồng nghiệp PRO</div>
+                      <div class="num font-number">158</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="wrap campain-kha-card">
+                      <div class="label">Khoá học đã launching</div>
+                      <div class="num font-number">2 THÁNG 3 NGÀY</div>
+                      <div class="note font-italic">(Tính từ: 04/04/2024)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="sec-campain sec-bundle">
+            <div class="sec-campain-box campain-kha-card">
+              <div class="sec-campain-tt fz-md">
+                Mona e-learn special bundle offer discount
+              </div>
+
+              <div class="sec-campain-content">
+                <table class="sec-table">
+                  <thead class="sec-thead">
+                    <th>Đợt</th>
+                    <th>Tháng</th>
+                    <th>Khách</th>
+                    <th>Doanh số</th>
+                  </thead>
+                  <tbody class="sec-tbody">
+                    <tr>
+                      <td>Đợt 0 (free-sale) - đã kết thúc</td>
+                      <td>2 tháng đầu 80tr còn lại 17tr</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Đợt 1 - đã kết thúc</td>
+                      <td>2 tháng đầu 14tr còn lại 5tr</td>
+                      <td>17/15 khách</td>
+                      <td>
+                        1,000,000,000
+
+                        <img
+                          src="./images/icon-info.svg"
+                          alt=""
+                          class="img-info popper-btn-js"
+                        />
+                      </td>
+
+                      <div id="tooltip" class="popper-content" role="tooltip">
+                        <div class="popper-content-item">
+                          Trong 17 người đợt 1 :
+                          <div class="ct">
+                            Có 4 người mua 6 tháng -> số tiền
+                          </div>
+                          <div class="ct">Có 5 người mua 2 tháng</div>
+                        </div>
+
+                        <div id="arrow" data-popper-arrow></div>
+                      </div>
+                    </tr>
+                    <tr>
+                      <td>Đợt 2 - đang chạy</td>
+                      <td>2 tháng đầu 18tr còn lại 8tr</td>
+                      <td>4/30 khách</td>
+                      <td>
+                        600,000,000
+                        <img
+                          src="./images/icon-info.svg"
+                          alt=""
+                          class="img-info popper-btn-js"
+                        />
+                      </td>
+
+                      <div id="tooltip" class="popper-content" role="tooltip">
+                        <div class="popper-content-item">
+                          Trong 4 người đợt 2 :
+                          <div class="ct">
+                            Có 4 người mua 6 tháng -> số tiền
+                          </div>
+                        </div>
+
+                        <div id="arrow" data-popper-arrow></div>
+                      </div>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="sec-campain sec-lead">
+            <div class="sec-campain-box campain-kha-card">
+              <div class="sec-campain-tt fz-md">Mona e-learn add-on</div>
+
+              <div class="sec-campain-content">
+                <table class="sec-table">
+                  <thead class="sec-thead">
+                    <th>Tên</th>
+                    <th>Giá/lần</th>
+                    <th>Số lượng</th>
+                    <th>Tổng</th>
+                  </thead>
+                  <tbody class="sec-tbody">
+                    <tr>
+                      <td>Setup layout</td>
+                      <td>20tr/lần</td>
+                      <td>10</td>
+                      <td>200,000,000</td>
+                    </tr>
+                    <tr>
+                      <td>Quay chụp</td>
+                      <td>30tr/lần</td>
+                      <td>5</td>
+                      <td>150,000,000</td>
+                    </tr>
+                    <tr>
+                      <td>Mentor</td>
+                      <td>5tr/buổi</td>
+                      <td>30</td>
+                      <td>150,000,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="sec-campain sec-lead">
+            <div class="sec-campain-box campain-kha-card">
+              <div class="sec-campain-tt fz-md">Mona service Ref=KHA</div>
+
+              <div class="sec-campain-content">
+                <div class="campain-kha-card bg-white">
+                  <div class="sec-table-tt fz-nor">Lead</div>
+                  <table class="sec-table">
+                    <thead class="sec-thead">
+                      <th>Mã KH</th>
+                      <th>Tên KH</th>
+                      <th>Mô tả</th>
+                      <th>Ref</th>
+                      <th>Đồng nghiệp</th>
+                    </thead>
+                    <tbody class="sec-tbody">
+                      <tr>
+                        <td>240520-3</td>
+                        <td>Anh Huân</td>
+                        <td>Dạy youtube</td>
+                        <td>Sin</td>
+                        <td>PRO</td>
+                      </tr>
+                      <tr>
+                        <td>240520-4</td>
+                        <td>Anh Khoa CraftbeerViet</td>
+                        <td>Dạy khoá nấu bia</td>
+                        <td>Sin</td>
+                        <td>PRO</td>
+                      </tr>
+                      <tr>
+                        <td>240520-3</td>
+                        <td>Anh Trà</td>
+                        <td>Dạy phương pháp học tiếng anh</td>
+                        <td>Sin</td>
+                        <td>PRO</td>
+                      </tr>
+                      <tr>
+                        <td>240520-3</td>
+                        <td>Anh Quốc Trí</td>
+                        <td>
+                          Có tiếng trong ngành bảo hiểm, BĐS, dạy Zalo marketing
+                        </td>
+                        <td>Anh Tuấn</td>
+                        <td>PRO</td>
+                      </tr>
+                      <tr>
+                        <td>240522-4</td>
+                        <td>Anh Quang Nhan</td>
+                        <td>Chưa biết dạy gì, vô kèo Quang Nhân</td>
+                        <td>Sin</td>
+                        <td>PRO</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="sec-campain-content">
+                <div class="campain-kha-card bg-white">
+                  <div class="sec-table-tt fz-nor">Service</div>
+                  <table class="sec-table">
+                    <thead class="sec-thead">
+                      <th>Tên</th>
+                      <th>Giá/số lần</th>
+                      <th>Số lần</th>
+                      <th>Tổng</th>
+                    </thead>
+                    <tbody class="sec-tbody">
+                      <tr>
+                        <td>Setup layout</td>
+                        <td>20tr/lần</td>
+                        <td>10</td>
+                        <td>200,000,000</td>
+                      </tr>
+                      <tr>
+                        <td>Quay chụp</td>
+                        <td>30tr/lần</td>
+                        <td>5</td>
+                        <td>150,000,000</td>
+                      </tr>
+                      <tr>
+                        <td>Mentor</td>
+                        <td>5tr/buổi</td>
+                        <td>30</td>
+                        <td>150,000,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
