@@ -259,5 +259,7 @@ body {
 #tooltip[data-popper-placement^="right"] > #arrow {
   left: -4px;
 }
-
-/*# sourceMappingURL=style.css.map */
+.sec-campain-content table tr.end,
+.sec-campain-content table tr.end td {
+  background-color: #e1e1e1;
+}
